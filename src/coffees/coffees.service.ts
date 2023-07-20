@@ -1,9 +1,5 @@
-import {
-  HttpException,
-  HttpStatus,
-  Injectable,
-  NotFoundException,
-} from '@nestjs/common';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { Coffee } from './entities/coffee.entity';
 
 @Injectable()
@@ -11,7 +7,7 @@ export class CoffeesService {
   private coffees: Coffee[] = [
     {
       id: 1,
-      name: 'Shipwreck Rost',
+      name: 'Shipwreck',
       brand: 'Buddy Brew',
       flavors: ['chocolate', 'vanilla'],
     },
